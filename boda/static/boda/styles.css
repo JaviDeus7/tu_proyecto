@@ -1,0 +1,152 @@
+/* styles.css */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url("/static/boda/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
+    animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
+    overflow: hidden; /* Evitar barras de desplazamiento */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    height: 100vh; /* Altura de la ventana del navegador */
+}
+
+.bienvenidaH1 {
+    font-size: 80px;
+    font-family: 'Darleston';
+    color: #444444; /* Cambia el color a gris */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.bienvenidaP {
+    font-size: 60px;
+    font-family: 'Darleston', cursive;
+    color: #444444; /* Cambia el color a gris */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.bienvenida-button {
+    display: block;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top:-1%;
+    background-color: #91c05e; /* Verde pastel claro */
+    color: #fff; /* Color de texto */
+    text-align: center;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bienvenida-button:hover {
+    background-color: #79a04f; /* Cambia el color de fondo al pasar el mouse */
+}
+
+@font-face {
+    font-family: 'WeddingFont';
+    src: url("/static/boda/fonts/AdineKirnberg.ttf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+@font-face {
+    font-family: 'Darleston';
+    src: url("/static/boda/fonts/Darleston.otf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+#menu-button {
+    position: fixed;
+    top: 30px; /* Ajusta la posición vertical según tus preferencias */
+    right: 50px; /* Ajusta la posición horizontal para colocar el botón a la derecha */
+    background: transparent; /* Fondo transparente */
+    border: none; /* Quita los bordes */
+    font-size: 34px; /* Tamaño de fuente para el icono del menú (ajusta según tus preferencias) */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    border: none; /* Quita los bordes */
+    background-color: #fff;
+}
+
+/* Estilo para el menú desplegable */
+#menu {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: -500px; /* Inicialmente fuera de la pantalla */
+    width: 300px; /* Ancho del menú */
+    height: 100%;
+    border-left: 1px solid #fff; /* Borde a la izquierda */
+    transition: right 0.3s ease-in-out; /* Transición suave del desplazamiento */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+}
+
+#menu.open {
+    right: 0; /* Abre el menú */
+    transition: right 0.3s ease-in-out;
+}
+
+#menu.open .close-button {
+    display: block;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido (logo y texto) */
+    margin: 5px 25px; /* Margen superior e inferior de 5px y margen izquierdo y derecho de 10px */
+    padding: 10px; /* Agregar relleno para espaciado */
+    border-bottom: 0.5px solid #ccc; /* Línea separadora menos ancha */
+    text-align: left; /* Alinea el texto a la izquierda */
+    transition: color 0.3s; /* Agrega una transición suave para el color del texto */
+}
+
+/* Estilo para los logos */
+#menu ul li img {
+    margin-right: 10px; /* Espaciado a la derecha de los logos */
+    max-width: 35px; /* Tamaño máximo de los logos */
+    height: auto; /* Mantener la proporción de aspecto */
+}
+
+#menu ul li:hover {
+    color: rgb(243, 77, 0); /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+#menu ul li a {
+    color: #91c05e;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: block; /* Convertir el enlace en un bloque para aplicar márgenes */
+    margin-bottom: 5px; /* Margen inferior para separación */
+    padding: 10px; /* Agregar relleno para espaciado */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
