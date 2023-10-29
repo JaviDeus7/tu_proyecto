@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url("/static/boda/x.png");
+    background-image: url("/static/boda/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
