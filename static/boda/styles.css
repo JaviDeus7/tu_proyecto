@@ -8,6 +8,10 @@
     }
 }
 
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas (ejemplo: teléfonos) */
+}
+
 body {
     background-image: url("/static/boda/background.jpg");
     background-size: cover;
