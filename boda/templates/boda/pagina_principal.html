@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de boda</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'boda/styles.css' %}">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = 1; // Asegura que la página comience con opacidad completa
+    
+            const menuButton = document.getElementById("menu-button");
+            const menu = document.getElementById("menu");
+            const closeButton = document.getElementById("close-button");
+    
+            menuButton.addEventListener("click", function() {
+                menu.classList.add("open");
+            });
+    
+            closeButton.addEventListener("click", function() {
+                menu.classList.remove("open");
+            });
+    
+            const bodaLink = document.querySelector(".dropdown-toggle a");
+            const submenu = document.querySelector(".submenu");
+    
+            bodaLink.addEventListener("click", function(e) {
+                e.preventDefault(); // Evita que el enlace navegue a una página
+                e.stopPropagation(); // Evita que el evento se propague al menú principal
+    
+                if (submenu.style.display === "block") {
+                    submenu.style.display = "none"; // Cierra el submenú
+                } else {
+                    submenu.style.display = "block"; // Abre el submenú
+                }
+            });
+    
+            // Cierra el menú al hacer clic en cualquier enlace del menú principal
+            const mainMenuLinks = document.querySelectorAll("#menu ul li a");
+            mainMenuLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    menu.classList.remove("open");
+                });
+            });
+        });
+    </script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script>
+        function updateCountdown() {
+            var endDate = new Date("2024-08-16 00:00:00").getTime();
+            var now = new Date().getTime();
+            var distance = endDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Actualiza el contenido de los círculos
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "¡Tiempo agotado!";
+            }
+        }
+
+        var countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/boda/logo.png" class="logo">
+        </div>
+        <button id="menu-button">☰</button>
+        <nav id="menu" class="hidden">
+            <button id="close-button" class="close-button"><img src="/static/boda/x.png" width="35px" background-color: ></button><br>
+            <ul>
+                <li><img src="/static/boda/amor.png" alt="amor"><a href="{% url 'pagina_principal' %}">Nos casamos</a></li>
+                <li class="dropdown-toggle">
+                    <a><img src="/static/boda/boda.png" alt="boda">La boda</a>
+                    <ul class="submenu">
+                      <li><img src="/static/boda/iglesia.png" alt="iglesia"><a href="{% url 'ceremonia' %}">Ceremonia</a></li>
+                      <li><img src="/static/boda/celebracion.png" alt="celebracion"><a href="{% url 'celebracion' %}">Celebración</a></li>
+                      <li><img src="/static/boda/hashtag.png" alt="hashtag"><a href="{% url 'hashtag' %}">Hashtag</a></li>
+                      <li><img src="/static/boda/musica.png" alt="musica"><a href="{% url 'musica' %}">Música</a></li>
+                      <li class="ultimo-item"><img src="/static/boda/fotos.png" alt="fotos"><a href="{% url 'albumFotos' %}">Álbum de fotos</a></li>
+                      <!-- Agrega más elementos del submenú según tus necesidades -->
+                    </ul>
+                  </li>
+                <li><img src="/static/boda/lista.png" alt="lista"><a href="{% url 'listaBoda' %}">Lista de boda</a></li>
+                <li><img src="/static/boda/asistencia.png" alt="asistencia"><a href="{% url 'confirmaAsistencia' %}">Confirma tu asistencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ceremony-section">
+        <h1>Eva & Manu</h1>
+
+        <div class="content">
+            <p>Aquí tenéis toda la información que necesitáis conocer para no perderos nuestra boda. Ni que decir tiene que estáis más que invitados así que, ¡os esperamos! ¡No faltéis!</p>
+        </div>
+
+        <p class="principal-let">La cuenta atrás</p>
+        <p>Cada día queda menos para que llegue el día de nuestra boda. ¡Os esperamos!</p><br>
+        <div class="circle-container">
+            <!-- Círculos para cada parte de la cuenta atrás -->
+            <div class="circle-label">Días</div>
+            <div class="circle" id="days">00</div>
+            <div class="circle-label">Horas</div>
+            <div class="circle" id="hours">00</div>
+            <div class="circle-label">Minutos</div>
+            <div class="circle" id="minutes">00</div>
+            <div class="circle-label">Segundos</div>
+            <div class="circle" id="seconds">00</div>
+        </div>
+
+        <p class="principal-let">¿Nos acompañáis u os lo perdéis?</p>
+        <p>No olvidéis confirmarnos la asistencia a nuestra boda.</p><br>
+        <a href="{% url 'confirmaAsistencia' %}" class="confirmar-button" >Confirmar</a>
+
+        <p class="principal-let">¿Queréis escuchar alguna canción en especial?</p>
+        <p>Ayúdanos a elegir la música de nuestra boda.</p><br>
+        <a href="{% url 'musica' %}" class="confirmar-button" >Música</a>
+
+        <p class="principal-let">¿Nos ayudáis en nuestra aventura</p>
+        <p>Os dejamos aquí el número de cuenta por si queréis ayudarnos en este nuevo viaje que empezamos juntos.</p><br>
+        <a href="{% url 'listaBoda' %}" class="confirmar-button" >Ver</a>
+    </div>
+    <!-- Aquí puedes agregar más contenido relacionado con tu boda -->
+    <footer>
+        <div class="footer-content">
+            <p>Eva & Manu</p>
+            <p>16 de agosto de 2024</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault(); // Previene la acción predeterminada del enlace
+                    document.body.style.opacity = 0; // Aplica el efecto de transición
+                    setTimeout(() => {
+                        window.location.href = link.href; // Navega a la nueva página después del desvanecimiento
+                    }, 500); // Espera 0.5 segundos (según la duración de la transición) antes de cambiar de página
+                });
+            });
+        });
+    </script>
+</body>
+</html>

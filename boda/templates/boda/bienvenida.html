@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bienvenidos a nuestra boda</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'boda/styles.css' %}">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = 1; // Asegura que la página comience con opacidad completa
+        });
+    </script>
+</head>
+<body>
+    <h1 class="bienvenidaH1">Eva <br/> Y <br> Manu</h1>
+    <p class="bienvenidaP">¡Bienvenidos a nuestra boda!</p>
+    <a href="{% url 'pagina_principal' %}" class="bienvenida-button" >Entrar</a>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault(); // Previene la acción predeterminada del enlace
+                    document.body.style.opacity = 0; // Aplica el efecto de transición
+                    setTimeout(() => {
+                        window.location.href = link.href; // Navega a la nueva página después del desvanecimiento
+                    }, 500); // Espera 0.5 segundos (según la duración de la transición) antes de cambiar de página
+                });
+            });
+        });
+    </script>
+</body>
+</html>
