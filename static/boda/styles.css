@@ -254,11 +254,11 @@ body {
 
 /* Estilo para el pie de página */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #0056b3; /* Color de fondo del pie de página */
+    background-color: #333; /* Color de fondo del pie de página */
     color: #fff; /* Color del texto del pie de página */
     text-align: center;
 }
