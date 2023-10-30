@@ -487,4 +487,16 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         padding: 20px;
         margin: 10px;
     }
+    .container-caja {
+        display: flex; /* Utiliza un flexbox container para alinear las cajas */
+        justify-content: space-around; /* Espacio uniforme entre las cajas */
+        background-color: #D3D4D8; /* Fondo del contenedor */
+        padding: 10px;
+        max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+        margin: 0 auto; /* Centra horizontalmente el contenido */
+    }
+    .album-caja {
+        font-size: 120%;
+        font-family: 'Darleston';    
+    }
 }
