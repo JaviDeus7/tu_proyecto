@@ -167,7 +167,7 @@ body {
 #menu-button {
     position: fixed;
     top: 30px; /* Ajusta la posición vertical según tus preferencias */
-    right: 50px; /* Ajusta la posición horizontal para colocar el botón a la derecha */
+    left: 50px; /* Ajusta la posición horizontal para colocar el botón a la derecha */
     background: transparent; /* Fondo transparente */
     border: none; /* Quita los bordes */
     font-size: 34px; /* Tamaño de fuente para el icono del menú (ajusta según tus preferencias) */
