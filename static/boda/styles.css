@@ -18,6 +18,7 @@ body {
     padding: 0; /* Sin relleno */
     max-height: 100vh; /* Establece la altura máxima de la ventana de visualización (viewport) */
     margin: 0; /* Elimina los márgenes para evitar desplazamientos no deseados */
+    overflow: auto !important;
 }
 
 .bienvenidaH1 {
