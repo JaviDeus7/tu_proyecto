@@ -448,8 +448,11 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         margin-top: 20px; /* Agrega margen superior para separarlo del contenido principal */
         background-color: #333 !important; /* Color de fondo del pie de página */
     }
-    .ceremony-section .circle {
-        width: 50px; /* Ancho del círculo */
-        height: 50px; /* Altura del círculo */
+    .circular-image {
+        display: block;
+        margin: 20px auto; /* Ajusta el margen según sea necesario */
+        border-radius: 5%; /* Esto hace que la imagen sea circular */
+        width: 350px; /* Ancho del mapa */
+        height: 200px; /* Alto del mapa */
     }
 }
