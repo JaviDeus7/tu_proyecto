@@ -14,7 +14,6 @@ body {
     background-repeat: no-repeat;
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
-    overflow: hidden; /* Evitar barras de desplazamiento */
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
     height: 100vh; /* Altura de la ventana del navegador */
