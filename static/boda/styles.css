@@ -455,4 +455,8 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         width: 350px; /* Ancho del mapa */
         height: 200px; /* Alto del mapa */
     }
+    .iframe-mapa {
+        width: 350px; /* Ancho del mapa */
+        height: 200px; /* Alto del mapa */
+    }
 }
