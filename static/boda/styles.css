@@ -442,7 +442,11 @@ a.enlace-instagram {
 /*============================================================================== 
 iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
 ================================================================================ */
-@media (max-width: 428px){ 
+@media (max-width: 528px){ 
+    body {
+        background-image: none;
+        background-color: #df1414;
+    }    
     footer {
         position: static !important; /* Cambia la posición a estática para que siga el flujo normal del documento */
         margin-top: 20px; /* Agrega margen superior para separarlo del contenido principal */
