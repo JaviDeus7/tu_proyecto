@@ -121,7 +121,7 @@ body {
 }
 
 #menu.open {
-    right: 0; /* Abre el menú */
+    left: 0; /* Abre el menú */
     transition: right 0.3s ease-in-out;
 }
 
