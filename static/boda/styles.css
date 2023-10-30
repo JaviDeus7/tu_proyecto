@@ -479,13 +479,13 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
     }
     .caja {
         width: 200px;
-        height: 300px;
+        height: 280px;
         background-color: #D3D4D8;
         border: 2px solid #333;
         border-radius: 10px; /* Bordes redondeados */
         text-align: center;
-        padding: 20px;
-        margin: 10px;
+        padding: 16px;
+        margin: 8px;
     }
     .container-caja {
         display: flex; /* Utiliza un flexbox container para alinear las cajas */
