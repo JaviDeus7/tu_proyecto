@@ -439,6 +439,11 @@ a.enlace-instagram {
     display: block; /* Hace que las etiquetas se muestren como bloques en lugar de en línea */
     width: 100px;
 }
+
+.iframe-mapa {
+    width: 400px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+}
 /*============================================================================== 
 iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
 ================================================================================ */
