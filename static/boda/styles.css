@@ -8,6 +8,10 @@
     }
 }
 
+html {
+    overflow: auto !important; /* Esto habilitará la barra de desplazamiento en todas las páginas */
+}
+
 body {
     background-image: url("/static/boda/background2.jpg");
     background-size: cover;
@@ -19,7 +23,6 @@ body {
     height: 100vh; /* Altura de la ventana del navegador */
     max-height: 100vh; /* Establece la altura máxima de la ventana de visualización (viewport) */
     margin: 0; /* Elimina los márgenes para evitar desplazamientos no deseados */
-    overflow: auto !important; /* Habilita la barra de desplazamiento cuando sea necesario */
 }
 
 .bienvenidaH1 {
