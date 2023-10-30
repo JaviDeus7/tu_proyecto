@@ -540,7 +540,7 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
     
     .novios-container img {
         width: 100%; /* Ajusta el ancho al 100% del contenedor */
-        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+        height: 100%; /* Ajusta la altura automáticamente para mantener la proporción */
         object-fit: cover; /* Mantiene la imagen centrada y cubre todo el contenedor */
     }
 }
