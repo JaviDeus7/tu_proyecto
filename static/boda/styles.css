@@ -499,10 +499,10 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         font-size: 130%;
         font-family: 'Darleston';    
     }
-.ceremony-section .circle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .ceremony-section .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .ceremony-section .circle {
@@ -510,8 +510,6 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         height: 100px;
         background-color: #333;
         color: #fff;
-        font-size: 20px;
-        display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
