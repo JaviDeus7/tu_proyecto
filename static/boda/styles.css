@@ -439,3 +439,10 @@ a.enlace-instagram {
     display: block; /* Hace que las etiquetas se muestren como bloques en lugar de en línea */
     width: 100px;
 }
+
+@media screen and (max-width: 767px) {
+    footer {
+        position: static; /* Cambia la posición a estática para que siga el flujo normal del documento */
+        margin-top: 20px; /* Agrega margen superior para separarlo del contenido principal */
+    }
+}
