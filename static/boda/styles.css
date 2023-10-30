@@ -415,8 +415,8 @@ a.enlace-instagram {
 .ceremony-section .circle {
     border: 5px solid #333; /* Ancho y color del borde */
     border-radius: 50%; /* Borde redondeado para hacer un círculo */
-    width: 5%; /* Ancho del círculo */
-    height: 5%; /* Altura del círculo */
+    width: 100px; /* Ancho del círculo */
+    height: 100px; /* Altura del círculo */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
     justify-content: center; /* Centra horizontalmente el contenido */
@@ -446,6 +446,10 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
     footer {
         position: static !important; /* Cambia la posición a estática para que siga el flujo normal del documento */
         margin-top: 20px; /* Agrega margen superior para separarlo del contenido principal */
-        background-color: #0056b3 !important; /* Color de fondo del pie de página */
+        background-color: #333 !important; /* Color de fondo del pie de página */
+    }
+    .ceremony-section .circle {
+        width: 50px; /* Ancho del círculo */
+        height: 50px; /* Altura del círculo */
     }
 }
