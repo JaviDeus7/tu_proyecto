@@ -500,16 +500,16 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         font-family: 'Darleston';    
     }
     .ceremony-section .circle {
-        border: 5px solid #333; /* Ancho y color del borde */
-        width: 100px; /* Ancho del círculo */
-        height: 100px; /* Altura del círculo */
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+        color: #fff;
+        font-size: 24px;
         display: flex;
-        align-items: center; /* Centra verticalmente el contenido */
-        justify-content: center; /* Centra horizontalmente el contenido */
-        margin: 10px; /* Margen entre los círculos */
-        text-align: center; /* Centra el contenido dentro del círculo */
-        font-size: 24px; /* Tamaño de fuente del contenido */
-        flex-direction: column; /* Establece la dirección de los elementos hijos a columna */
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px;
+        border-radius: 10px;
     }
     
     .ceremony-section .circle-container {
