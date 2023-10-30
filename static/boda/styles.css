@@ -444,8 +444,8 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
 ================================================================================ */
 @media only screen and (max-width: 428px){ 
     footer {
-        position: static; /* Cambia la posición a estática para que siga el flujo normal del documento */
+        position: static !important; /* Cambia la posición a estática para que siga el flujo normal del documento */
         margin-top: 20px; /* Agrega margen superior para separarlo del contenido principal */
-        background-color: #0056b3; /* Color de fondo del pie de página */
+        background-color: #0056b3 !important; /* Color de fondo del pie de página */
     }
 }
