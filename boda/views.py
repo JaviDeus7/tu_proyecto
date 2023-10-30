@@ -20,7 +20,7 @@ def musica(request):
     return render(request, 'boda/musica.html')
 
 def albumFotos(request):
-    return render(request, 'boda/albumFotos.html')
+    return render(request, 'boda/albumfotos.html')
 
 def listaBoda(request):
     return render(request, 'boda/listaBoda.html')
