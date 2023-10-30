@@ -534,13 +534,13 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         justify-content: center;
         align-items: center;
         height: 100vh; /* Asegura que ocupe toda la altura de la ventana del navegador */
+        margin-top: 20px; /* Añade margen superior para acercar la imagen al contenido superior */
+        margin-bottom: 20px; /* Añade margen inferior para acercar la imagen al contenido inferior */
     }
     
     .novios-container img {
         width: 100%; /* Ajusta el ancho al 100% del contenedor */
         height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
         object-fit: cover; /* Mantiene la imagen centrada y cubre todo el contenedor */
-        margin-top: 20px; /* Añade margen superior para acercar la imagen al contenido superior */
-        margin-bottom: 20px; /* Añade margen inferior para acercar la imagen al contenido inferior */
     }
 }
