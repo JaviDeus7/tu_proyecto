@@ -479,7 +479,7 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
     }
     .caja {
         width: 200px;
-        height: 100px;
+        height: 300px;
         background-color: #D3D4D8;
         border: 2px solid #333;
         border-radius: 10px; /* Bordes redondeados */
@@ -496,7 +496,7 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         margin: 0 auto; /* Centra horizontalmente el contenido */
     }
     .album-caja {
-        font-size: 120%;
+        font-size: 130%;
         font-family: 'Darleston';    
     }
 }
