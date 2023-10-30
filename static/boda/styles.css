@@ -474,4 +474,9 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         border: none;
         border-radius: 5%; /* También establece el radio del borde en el iframe para que sea circular */
     }
+    .instagram-fotos {
+        width: 350px; /* Ancho del mapa */
+        height: 200px; /* Alto del mapa */
+        margin: 0 auto; /* Centra horizontalmente el elemento .map */
+    }
 }
