@@ -1,4 +1,4 @@
-/* styles.css */
+/* styles.css estee*/ 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -6,10 +6,6 @@
     to {
         opacity: 1;
     }
-}
-
-@media (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas (ejemplo: teléfonos) */
 }
 
 body {
@@ -45,6 +41,23 @@ body {
     margin-top:-1%;
     background-color: #91c05e; /* Verde pastel claro */
     color: #fff; /* Color de texto */
+    text-align: center;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.confirmar-button {
+    display: block;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top:-1%;
+    background-color: #99b182; /* Verde pastel claro */
+    color: #fff !important; /* Color de texto */
+    text-decoration: none !important;
     text-align: center;
     padding: 10px 20px; /* Espaciado interno del botón */
     border: none;
@@ -102,13 +115,14 @@ body {
     position: fixed;
     background-color: #fff;
     top: 0;
-    right: -500px; /* Inicialmente fuera de la pantalla */
+    right: -300px; /* Inicialmente fuera de la pantalla */
     width: 300px; /* Ancho del menú */
     height: 100%;
     border-left: 1px solid #fff; /* Borde a la izquierda */
     transition: right 0.3s ease-in-out; /* Transición suave del desplazamiento */
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
+    z-index: 1; /* Asegura que el menú esté por encima del contenido principal */
 }
 
 #menu.open {
@@ -155,21 +169,266 @@ body {
     text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.dropdown .submenu {
-    display: none;
-  }
-  
-  .dropdown:hover .submenu {
-    display: block;
-  }
-  
-  /* Estilo adicional para "La boda" (puedes personalizarlo según tus preferencias) */
-  .dropdown {
+.dropdown-toggle {
     position: relative;
-  }
+}
   
-  .dropdown a::after {
-    content: '\25BC'; /* Flecha hacia abajo para indicar menú desplegable */
-    display: inline-block;
-    margin-left: 5px; /* Espacio entre el texto y la flecha */
-  }
+.submenu {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 2; /* Asegura que el menú esté por encima del contenido principal */
+}
+  
+.dropdown-toggle:hover .submenu {
+    display: block;
+}
+
+/* Cambia el diseño para mover las opciones del menú principal hacia abajo */
+.submenu li {
+    margin-top: 1em;
+}
+
+.ceremony-section {
+    text-align: center;
+    background-color: #D3D4D8;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 0.5%;
+}
+
+.ceremony-section h1 {
+    font-size: 86px;
+    font-family: 'Darleston';
+}
+
+.ceremony-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+}
+
+.ceremony-section a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.ceremony-section a:hover {
+    text-decoration: underline;
+}
+
+.circular-image {
+    display: block;
+    margin: 20px auto; /* Ajusta el margen según sea necesario */
+    border-radius: 5%; /* Esto hace que la imagen sea circular */
+    width: 450px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+}
+
+.map {
+    width: 450px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+    overflow: hidden;
+    border-radius: 5%; /* Establece el radio del borde para que sea circular */
+    margin: 0 auto; /* Centra horizontalmente el elemento .map */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5%; /* También establece el radio del borde en el iframe para que sea circular */
+}
+
+.submenu .ultimo-item {
+    border-bottom: none; /* Elimina la línea de separación inferior */
+}
+
+/* Estilo para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    text-align: center;
+}
+
+.footer-content {
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px;
+}
+
+/* Estilo para los nombres */
+.footer-content p:first-child {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para la fecha */
+.footer-content p:last-child {
+    font-style: italic; /* Texto en cursiva */
+}
+
+.content {
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+.content p {
+    word-wrap: break-word; /* Rompe las palabras largas si no caben en una línea */
+}
+
+a.enlace-instagram {
+    color: #91c05e; /* Reemplaza "#FFA500" con el color que desees */
+    text-decoration: none !important; /* Elimina el subrayado del enlace */
+}
+
+.instagram-fotos {
+    padding-left: 25%;
+}
+
+.caja {
+    width: 300px;
+    height: 200px;
+    background-color: #D3D4D8;
+    border: 2px solid #333;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.container-caja {
+    display: flex; /* Utiliza un flexbox container para alinear las cajas */
+    justify-content: space-around; /* Espacio uniforme entre las cajas */
+    background-color: #D3D4D8; /* Fondo del contenedor */
+    padding: 20px;
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+}
+
+.album-caja {
+    font-size: 220%;
+    font-family: 'Darleston';    
+}
+
+.cuentabanco {
+    color: #79a04f;
+}
+
+/* Estilos personalizados para el formulario */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D3D4D8;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.columna-izquierda,
+.columna-derecha {
+    padding: 10px;
+}
+
+.columna-izquierda label,
+.columna-derecha label {
+    font-weight: bold;
+}
+
+.columna-izquierda input[type="text"],
+.columna-izquierda input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.columna-derecha textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.boton-enviar {
+    display: block;
+    margin: 0 auto; /* Esto centrará el botón horizontalmente */
+}
+
+.inicio-b {
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
+.principal-let{
+    font-size: 220% !important;
+    font-family: 'Darleston' !important;    
+}
+
+.countdown {
+    display: flex;
+}
+
+.countdown > div {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.countdown span {
+    font-size: 24px;
+}
+
+.countdown div span:first-child {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.ceremony-section .circle {
+    border: 5px solid #333; /* Ancho y color del borde */
+    border-radius: 50%; /* Borde redondeado para hacer un círculo */
+    width: 100px; /* Ancho del círculo */
+    height: 100px; /* Altura del círculo */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    margin: 10px; /* Margen entre los círculos */
+    text-align: center; /* Centra el contenido dentro del círculo */
+    font-size: 24px; /* Tamaño de fuente del contenido */
+    flex-direction: column; /* Establece la dirección de los elementos hijos a columna */
+}
+
+.ceremony-section .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ceremony-section .circle-label {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px; /* Espacio entre la etiqueta y el círculo */
+    display: block; /* Hace que las etiquetas se muestren como bloques en lugar de en línea */
+    width: 100px;
+}
