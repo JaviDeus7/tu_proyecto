@@ -18,6 +18,8 @@ body {
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
     height: 100vh; /* Altura de la ventana del navegador */
+    max-height: 100vh; /* Establece la altura máxima de la ventana de visualización (viewport) */
+    margin: 0; /* Elimina los márgenes para evitar desplazamientos no deseados */
 }
 
 .bienvenidaH1 {
@@ -39,7 +41,7 @@ body {
     width: 100px; /* Ajusta el ancho según sea necesario */
     margin: 0 auto; /* Centra horizontalmente */
     margin-top:-1%;
-    background-color: #0056b3; /* Verde pastel claro */
+    background-color: #91c05e; /* Verde pastel claro */
     color: #fff; /* Color de texto */
     text-align: center;
     padding: 10px 20px; /* Espaciado interno del botón */
