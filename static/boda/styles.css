@@ -501,14 +501,13 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
     }
     .ceremony-section .circle {
         width: 100px;
-        height: 100px;
+        height: 50px;
         background-color: #333;
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
         display: grid;
         align-items: center;
         justify-content: center;
-        margin: 0 10px;
         border-radius: 10px;
     }
     
