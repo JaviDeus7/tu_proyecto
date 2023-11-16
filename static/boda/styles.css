@@ -199,7 +199,7 @@ body {
 
 .ceremony-section {
     text-align: center;
-    background-color: rgba(211, 212, 216, 0.5);
+    background-color: rgba(211, 212, 216, 0.8);
     padding: 20px;
     font-family: Arial, sans-serif;
     margin-top: 0.5%;
@@ -299,7 +299,7 @@ a.enlace-instagram {
 .caja {
     width: 300px;
     height: 200px;
-    background-color: #D3D4D8;
+    background-color: rgba(211, 212, 216, 0.8);
     border: 2px solid #333;
     border-radius: 10px; /* Bordes redondeados */
     text-align: center;
@@ -310,7 +310,7 @@ a.enlace-instagram {
 .container-caja {
     display: flex; /* Utiliza un flexbox container para alinear las cajas */
     justify-content: space-around; /* Espacio uniforme entre las cajas */
-    background-color: #D3D4D8; /* Fondo del contenedor */
+    background-color: rgba(211, 212, 216, 0.8); /* Fondo del contenedor */
     padding: 20px;
     max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
     margin: 0 auto; /* Centra horizontalmente el contenido */
@@ -330,7 +330,7 @@ a.enlace-instagram {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #D3D4D8;
+    background-color: rgba(211, 212, 216, 0.8);
     border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
