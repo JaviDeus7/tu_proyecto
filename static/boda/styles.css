@@ -10,6 +10,9 @@
 
 html {
     overflow: auto !important; /* Esto habilitará la barra de desplazamiento en todas las páginas */
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -20,8 +23,8 @@ body {
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
-    height: 100vh; /* Altura de la ventana del navegador */
-    max-height: 100vh; /* Establece la altura máxima de la ventana de visualización (viewport) */
+    height: 100%; /* Altura de la ventana del navegador */
+    max-height: 100%; /* Establece la altura máxima de la ventana de visualización (viewport) */
     margin: 0; /* Elimina los márgenes para evitar desplazamientos no deseados */
 }
 
