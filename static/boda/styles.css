@@ -23,7 +23,7 @@ body {
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
-    min-height: 100vh;
+    height: 100%;
 }
 
 .bienvenidaH1 {
