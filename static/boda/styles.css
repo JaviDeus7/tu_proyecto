@@ -17,7 +17,7 @@ html {
 
 body {
     background-image: url("/static/boda/background2.jpg");
-    background-size: cover;
+    background-size: contain !important;
     background-repeat: no-repeat;
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
@@ -451,15 +451,10 @@ iframe {
     justify-content: center;
     align-items: center;
     height: 100vh; /* Cambia 'height' por 'min-height' para permitir que el contenedor crezca */
-    margin-top: 9px; /* Añade margen superior para acercar la imagen al contenido superior */
-    margin-bottom: 9px; /* Añade margen inferior para acercar la imagen al contenido inferior */
-    
 }
 
 .novios-container img {
-    width: 100%; /* Ajusta el ancho máximo para que la imagen se ajuste correctamente */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
     max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
     max-height: 100%; /* Asegura que la imagen no sea más alta que el contenedor */
 }
