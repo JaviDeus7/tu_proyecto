@@ -451,8 +451,6 @@ iframe {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Cambia 'height' por 'min-height' para permitir que el contenedor crezca */
-    padding-top: 19px; /* Ajusta el espaciado superior */
-    padding-bottom: 19px; /* Ajusta el espaciado inferior */
 }
 
 .novios-container img {
