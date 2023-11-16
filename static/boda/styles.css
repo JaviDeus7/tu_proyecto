@@ -17,7 +17,7 @@ html {
 
 body {
     background-image: url("/static/boda/background2.jpg");
-    background-size: contain !important;
+    background-size: cover !important;
     background-repeat: no-repeat;
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
@@ -455,8 +455,8 @@ iframe {
 
 .novios-container img {
     object-fit: contain; /* Ajusta la imagen dentro del contenedor */
-    max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
-    max-height: 100%; /* Asegura que la imagen no sea más alta que el contenedor */
+    max-width: 50%; /* Asegura que la imagen no sea más ancha que el contenedor */
+    max-height: 50%; /* Asegura que la imagen no sea más alta que el contenedor */
 }
 /*============================================================================== 
 iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
