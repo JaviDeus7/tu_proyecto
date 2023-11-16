@@ -255,7 +255,8 @@ body {
 
 /* Estilo para el pie de página */
 footer {
-    position: fixed;
+    position: static !important;
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
