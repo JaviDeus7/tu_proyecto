@@ -25,5 +25,8 @@ def albumFotos(request):
 def listaBoda(request):
     return render(request, 'boda/listaBoda.html')
 
+def lugaresinteres(request):
+    return render(request, 'boda/lugares_interes.html')
+
 def confirmaAsistencia(request):
     return render(request, 'boda/confirmaAsistencia.html')
