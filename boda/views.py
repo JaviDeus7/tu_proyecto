@@ -7,11 +7,11 @@ def bienvenida(request):
 def pagina_principal(request):
     return render(request, 'boda/pagina_principal.html')
 
-def ceremonia(request):
-    return render(request, 'boda/ceremonia.html')
+def preboda(request):
+    return render(request, 'boda/preboda.html')
 
-def celebracion(request):
-    return render(request, 'boda/celebracion.html')
+def ceremonia_celebracion(request):
+    return render(request, 'boda/ceremonia_celebracion.html')
 
 def hashtag(request):
     return render(request, 'boda/hashtag.html')
