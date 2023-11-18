@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Celebración</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'boda/styles.css' %}">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = 1; // Asegura que la página comience con opacidad completa
+    
+            const menuButton = document.getElementById("menu-button");
+            const menu = document.getElementById("menu");
+            const closeButton = document.getElementById("close-button");
+    
+            menuButton.addEventListener("click", function() {
+                menu.classList.add("open");
+            });
+    
+            closeButton.addEventListener("click", function() {
+                menu.classList.remove("open");
+            });
+    
+            const bodaLink = document.querySelector(".dropdown-toggle a");
+            const submenu = document.querySelector(".submenu");
+    
+            bodaLink.addEventListener("click", function(e) {
+                e.preventDefault(); // Evita que el enlace navegue a una página
+                e.stopPropagation(); // Evita que el evento se propague al menú principal
+    
+                if (submenu.style.display === "block") {
+                    submenu.style.display = "none"; // Cierra el submenú
+                } else {
+                    submenu.style.display = "block"; // Abre el submenú
+                }
+            });
+    
+            // Cierra el menú al hacer clic en cualquier enlace del menú principal
+            const mainMenuLinks = document.querySelectorAll("#menu ul li a");
+            mainMenuLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    menu.classList.remove("open");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!--<div class="logo">
+            <img src="/static/boda/logo.png" class="logo">
+        </div>-->
+        <button id="menu-button">☰</button>
+        <nav id="menu" class="hidden">
+            <button id="close-button" class="close-button"><img src="/static/boda/x.png" width="35px" background-color: ></button><br>
+            <ul>
+                <li><img src="/static/boda/amor.png" alt="amor"><a href="{% url 'pagina_principal' %}">Nos casamos</a></li>
+                <li class="dropdown-toggle">
+                    <a><img src="/static/boda/boda.png" alt="boda">La boda</a>
+                    <ul class="submenu">
+                      <li><img src="/static/boda/iglesia.png" alt="iglesia"><a href="{% url 'preboda' %}">Preboda</a></li>
+                      <li><img src="/static/boda/celebracion.png" alt="celebracion"><a href="{% url 'ceremonia_celebracion' %}">Celebración</a></li>
+                      <li><img src="/static/boda/hashtag.png" alt="hashtag"><a href="{% url 'hashtag' %}">Hashtag</a></li>
+                      <li><img src="/static/boda/musica.png" alt="musica"><a href="{% url 'musica' %}">Música</a></li>
+                      <li class="ultimo-item"><img src="/static/boda/fotos.png" alt="fotos"><a href="{% url 'albumFotos' %}">Álbum de fotos</a></li>
+                      <!-- Agrega más elementos del submenú según tus necesidades -->
+                    </ul>
+                  </li>
+                <li><img src="/static/boda/lista.png" alt="lista"><a href="{% url 'listaBoda' %}">Lista de boda</a></li>
+                <li><img src="/static/boda/asistencia.png" alt="asistencia"><a href="{% url 'confirmaAsistencia' %}">Confirma tu asistencia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="ceremony-section">
+        <h1>Ceremonia & Celebración</h1>
+
+        <img src="/static/boda/ceremonia.jpg" alt="Imagen Circular" class="circular-image">
+
+        <p>La ceremonia y la celebración tendrán lugar en <strong>Castillo de Santiago</strong>, en Jerez de la Frontera. Los aperitivos serán en el Jardín de la Catedral y la comida en Bodega La Constancia.</p>
+
+        <p><strong>Dirección:</strong> Pl. del Castillo de Santiago 11540 Sanlúcar de Barrameda (Cádiz). <a href="https://www.google.com/maps" target="_blank">Ver mapa</a></p>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.7505370594804!2d-6.353069722853459!3d36.776551569030275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde248b6dfaad%3A0xaf1c089839453b33!2sPl.%20del%20Castillo%20de%20Santiago%2C%2011540%20Sanl%C3%BAcar%20de%20Barrameda%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1698590053485!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- Aquí puedes agregar más contenido relacionado con tu boda -->
+    <footer>
+        <div class="footer-content">
+            <p>Eva & Manu</p>
+            <p>16 de agosto de 2024</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault(); // Previene la acción predeterminada del enlace
+                    document.body.style.opacity = 0; // Aplica el efecto de transición
+                    setTimeout(() => {
+                        window.location.href = link.href; // Navega a la nueva página después del desvanecimiento
+                    }, 500); // Espera 0.5 segundos (según la duración de la transición) antes de cambiar de página
+                });
+            });
+        });
+    </script>
+</body>
+</html>
