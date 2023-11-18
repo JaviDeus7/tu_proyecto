@@ -28,5 +28,6 @@ urlpatterns = [
     path('Musica/', views.musica, name='musica'),
     path('AlbumFotos/', views.albumFotos, name='albumFotos'),
     path('ListaBoda/', views.listaBoda, name='listaBoda'),
+    path('LugaresInteres/', views.lugaresinteres, name='lugaresinteres'),
     path('ConfirmaAsistencia/', views.confirmaAsistencia, name='confirmaAsistencia'),
 ]
