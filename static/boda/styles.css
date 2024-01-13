@@ -26,12 +26,20 @@ body {
     height: 100%;
 }
 
-.lista-interes {
-    text-align:left;
-    display:block;
-    padding:0.4rem;
-    font-size: 38px;
+.lista-container {
+    margin-left: 20px; /* Ajusta según sea necesario */
+    font-size: 35px;
     font-family: 'Browny';
+}
+
+.lista-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-container li {
+    text-align: left;
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
 }
 
 .bienvenidaH1 {
