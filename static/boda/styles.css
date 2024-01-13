@@ -89,6 +89,24 @@ body {
     /* Agrega otros formatos de fuente si es necesario */
 }
 
+@font-face {
+    font-family: 'Valencia';
+    src: url("/static/boda/fonts/Valencia.ttf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+@font-face {
+    font-family: 'Romagnitta';
+    src: url("/static/boda/fonts/Romagnitta.ttf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+@font-face {
+    font-family: 'Browny';
+    src: url("/static/boda/fonts/BrownyCakesSignature.ttf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
 /*
 .logo {
     width: 50px;
