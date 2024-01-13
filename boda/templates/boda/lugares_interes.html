@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lugares de Interés</title>
+    <title>Eventos y Lugares de Interés</title>
     <link rel="stylesheet" type="text/css" href="{% static 'boda/styles.css' %}">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -68,32 +68,51 @@
                     </ul>
                   </li>
                 <li><img src="/static/boda/lista.png" alt="lista"><a href="{% url 'listaBoda' %}">Lista de boda</a></li>
-                <li><img src="/static/boda/lugaresinteres.png" alt="lista"><a href="{% url 'lugaresinteres' %}">Lugares de interés</a></li>
+                <li><img src="/static/boda/lugaresinteres.png" alt="lista"><a href="{% url 'lugaresinteres' %}">Eventos y lugares de interés</a></li>
                 <li><img src="/static/boda/asistencia.png" alt="asistencia"><a href="{% url 'confirmaAsistencia' %}">Confirma tu asistencia</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="ceremony-section">
-        <h1>Lugares de interés</h1>
+        <h1>Eventos y lugares de interés</h1>
 
-        <p>Si os apetece hacer un poco de turismo o andáis un poco perdidos sobre qué ver o incluso dónde comer o cenar, aquí os dejamos un listado de nuestros sitios favoritos.</p>
-
+        <p class="principal-let">Carreras de Caballos</p>
+        <p>Tendréis la suerte de poder coincidir y poder asistir a un evento de interés turístico internacional,<br> las Carreras de Caballos de Sanlúcar en la playa, que tendrán lugar los días 14, 16 y 17 de agosto por la tarde. Os animamos a que no os lo perdáis!</p>      
         <img src="/static/boda/sitio_interes1.jpg" alt="Imagen Circular" class="circular-image">
-        <p>Sanlúcar de Barrameda</p>
-        <a href="https://www.sanlucardebarrameda.es/" style='color: grey'>www.sanlucardebarrameda.es</a>
 
+        <p class="principal-let">Dia de la Caridad</p>
+        <p>El 15 de agosto es el día de la patrona de Sanlúcar, la virgen de la Caridad. Es nuestra costumbre hacer<br> una alfombra de sal en la calle ancha (en el centro) por los niños el 14 por la noche. El 15 por el día estará estupenda para que la veáis!</p>
         <img src="/static/boda/sitio_interes2.jpg" alt="Imagen Circular" class="circular-image">
-        <p>Cádiz</p>
-        <a href="https://www.cadizturismo.com/es" style='color: grey'>www.cadizturismo.com</a>
-
-        <img src="/static/boda/sitio_interes3.jpg" alt="Imagen Circular" class="circular-image">
-        <p>Playas</p>
-        <p>Las Redes, playa de Fuentebravia, playa de la Muralla, playa de Valdelagrana, playa de las Tres Piedras, <br>Costa Ballena, Faro Blanco, playa de Aguadulce, playa de Punta Candor y playa de Bolonia.</p>
-
-        <img src="/static/boda/sitio_interes4.jpg" alt="Imagen Circular" class="circular-image">
-        <p>Jerez de la Frontera</p>
-        <a href="https://www.turismojerez.com/" style='color: grey'>www.turismojerez.com</a>
+        
+        <p class="principal-let">Sitios que visitar</p>
+        <ul>
+          <li>Bodegas Barbadillo</li>
+          <li>Bodegas la Gitana</li>
+          <li>Museo Fabrica de hielo</li>
+          <li>Excursión al coto de Doñana (parque nacional protegido que separa Huelva, Cádiz y Sevilla)</li>
+          <li>Visita a Cádiz</li>
+          <li>Visita a Jerez de la frontera</li>
+        </ul>
+        
+        <p class="principal-let">Recomendaciones gastronómicas</p>
+        <ul>
+          <li>Barra Bigote (no se puede reservar, es necesario que vayáis con tiempo para coger mesa)</li>
+          <li>Casa Barbino</li>
+          <li>Casa Barbiana</li>
+          <li>Restaurante Avante Claro</li>
+          <li>Restaurante Doña Calma</li>
+        </ul>
+        
+        <p class="principal-let">Playas</p>
+        <ul>
+          <li>Playa de las tres piedras</li>
+          <li>Playa Costa Ballena</li>
+          <li>Playa de Bolonia</li>
+          <li>Playa de los Alemanes</li>
+          <li>Playa punta Candor</li>
+          <li>Playa aguadulce</li>
+        </ul>
         
     </div>
     <!-- Aquí puedes agregar más contenido relacionado con tu boda -->
