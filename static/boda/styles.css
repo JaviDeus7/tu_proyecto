@@ -26,6 +26,12 @@ body {
     height: 100%;
 }
 
+.lista-interes {
+    display:block;
+    padding:0.4rem;
+    text-align:left
+}
+
 .bienvenidaH1 {
     font-size: 80px;
     font-family: 'Valencia';
