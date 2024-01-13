@@ -58,8 +58,8 @@
                 <li class="dropdown-toggle">
                     <a><img src="/static/boda/boda.png" alt="boda">La boda</a>
                     <ul class="submenu">
-                      <li><img src="/static/boda/iglesia.png" alt="iglesia"><a href="{% url 'ceremonia' %}">Ceremonia</a></li>
-                      <li><img src="/static/boda/celebracion.png" alt="celebracion"><a href="{% url 'celebracion' %}">Celebración</a></li>
+                      <li><img src="/static/boda/iglesia.png" alt="iglesia"><a href="{% url 'preboda' %}">Preboda</a></li>
+                      <li><img src="/static/boda/celebracion.png" alt="celebracion"><a href="{% url 'ceremonia_celebracion' %}">Celebración</a></li>
                       <li><img src="/static/boda/hashtag.png" alt="hashtag"><a href="{% url 'hashtag' %}">Hashtag</a></li>
                       <li><img src="/static/boda/musica.png" alt="musica"><a href="{% url 'musica' %}">Música</a></li>
                       <li class="ultimo-item"><img src="/static/boda/fotos.png" alt="fotos"><a href="{% url 'albumFotos' %}">Álbum de fotos</a></li>
@@ -67,7 +67,9 @@
                     </ul>
                   </li>
                 <li><img src="/static/boda/lista.png" alt="lista"><a href="{% url 'listaBoda' %}">Lista de boda</a></li>
+                <li><img src="/static/boda/lugaresinteres.png" alt="lista"><a href="{% url 'lugaresinteres' %}">Eventos y lugares de interés</a></li>
                 <li><img src="/static/boda/asistencia.png" alt="asistencia"><a href="{% url 'confirmaAsistencia' %}">Confirma tu asistencia</a></li>
+                <li><img src="/static/boda/informacionAdicional.png" alt="informacionAdicional"><a href="{% url 'informacionAdicional' %}">Información adicional</a></li>
             </ul>
         </nav>
     </header>
