@@ -231,7 +231,7 @@ body {
 
 .letra-evaymanu {
     font-size: 86px;
-    font-family: 'Valencia';
+    font-family: 'Valencia' !important;;
 }
 
 .ceremony-section p {
