@@ -30,3 +30,6 @@ def lugaresinteres(request):
 
 def confirmaAsistencia(request):
     return render(request, 'boda/confirmaAsistencia.html')
+
+def informacionAdicional(request):
+    return render(request, 'boda/informacionAdicional.html')
