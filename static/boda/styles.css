@@ -35,7 +35,7 @@ body {
 
 .bienvenidaP {
     font-size: 60px;
-    font-family: 'Valencia', cursive;
+    font-family: 'Romagnitta', cursive;
     color: #444444; /* Cambia el color a gris */
     text-align: center; /* Centra el texto horizontalmente */
 }
@@ -226,11 +226,16 @@ body {
 
 .ceremony-section h1 {
     font-size: 86px;
+    font-family: 'Romagnitta';
+}
+
+.letra-evaymanu {
+    font-size: 86px;
     font-family: 'Valencia';
 }
 
 .ceremony-section p {
-    font-size: 18px;
+    font-size: 38px;
     margin-bottom: 20px;
     font-family: 'Browny';
 }
@@ -405,7 +410,7 @@ a.enlace-instagram {
 }
 
 .inicio-b {
-    font-size: 18px;
+    font-size: 38px;
     font-family: 'Browny';
 }
 
