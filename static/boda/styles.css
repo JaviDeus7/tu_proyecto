@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-image: url("/static/boda/background2.jpg");
+    background-image: url("/static/boda/background3.jpeg");
     background-size: cover !important;
     /* background-repeat: no-repeat;*/
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
@@ -51,7 +51,7 @@ body {
 
 .bienvenidaP {
     font-size: 60px;
-    font-family: 'Romagnitta', cursive;
+    font-family: 'Daydreamer', cursive;
     color: #444444; /* Cambia el color a gris */
     text-align: center; /* Centra el texto horizontalmente */
 }
@@ -120,6 +120,12 @@ body {
 @font-face {
     font-family: 'Browny';
     src: url("/static/boda/fonts/BrownyCakesSignature.ttf");
+    /* Agrega otros formatos de fuente si es necesario */
+}
+
+@font-face {
+    font-family: 'Daydreamer';
+    src: url("/static/boda/fonts/Daydreamer.ttf");
     /* Agrega otros formatos de fuente si es necesario */
 }
 
@@ -433,12 +439,12 @@ a.enlace-instagram {
 
 .principal-let{
     font-size: 400% !important;
-    font-family: 'Romagnitta' !important;
+    font-family: 'Daydreamer' !important;
 }
 
 .principal-let-textos{
     font-size: 280% !important;
-    font-family: 'Romagnitta' !important;
+    font-family: 'Daydreamer' !important;
 }
 
 .countdown {
@@ -485,7 +491,7 @@ a.enlace-instagram {
     margin-top: 10px; /* Espacio entre la etiqueta y el círculo */
     display: block; /* Hace que las etiquetas se muestren como bloques en lugar de en línea */
     width: 100px;
-    font-family: 'Romagnitta';
+    font-family: 'Daydreamer';
 }
 
 iframe {
