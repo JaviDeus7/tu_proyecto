@@ -17,7 +17,7 @@ html {
 
 body {
     background-image: url("/static/boda/background3.jpeg");
-    background-size: cover !important;
+    background-size: contain !important;
     /* background-repeat: no-repeat;*/
     transition: opacity 0.5s; /* Efecto de transición de desvanecimiento durante 0.5 segundos */
     animation: fadeIn 2s ease; /* Aplicar la animación de desvanecimiento durante 1 segundo */
