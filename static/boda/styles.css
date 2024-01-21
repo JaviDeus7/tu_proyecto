@@ -587,6 +587,14 @@ iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
         text-align: center; /* Añade alineación de texto al centro */
         margin: 5px; /* Añade un pequeño margen entre los elementos */
     }
+    .ceremony-section .circle-label {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 10px; /* Espacio entre la etiqueta y el círculo */
+        display: block; /* Hace que las etiquetas se muestren como bloques en lugar de en línea */
+        width: 100px;
+        font-family: 'Daydreamer';
+    }
     .novios-container {
         display: flex;
         justify-content: center;
