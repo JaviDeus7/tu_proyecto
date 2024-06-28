@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.bienvenida, name='bienvenida'),
     path('Principal/', views.pagina_principal, name='pagina_principal'),
     path('Preboda/', views.preboda, name='preboda'),
+    path('Postboda/', views.postboda, name='postboda'),
     path('Ceremonia&Celebracion/', views.ceremonia_celebracion, name='ceremonia_celebracion'),
     path('Hashtag/', views.hashtag, name='hashtag'),
     path('Musica/', views.musica, name='musica'),
