@@ -10,6 +10,9 @@ def pagina_principal(request):
 def preboda(request):
     return render(request, 'boda/preboda.html')
 
+def postboda(request):
+    return render(request, 'boda/postboda.html')
+
 def ceremonia_celebracion(request):
     return render(request, 'boda/ceremonia_celebracion.html')
 
